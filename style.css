@@ -24,3 +24,31 @@ a {
     flex-direction: right;
     color: grey;
 }
+
+h2{
+    text-align-top: left;
+    border-radius:  box-shadow: 4px 7px 5px gray; 
+    
+  
+}
+
+
+ .id {
+    margin: auto;
+    margin-top: 100px;
+    padding: 28px ;
+    box-shadow: 4px 7px 5px 2px  gray;
+    border-radius: 10px;
+     
+    height: 200px;
+    width: 1000px;
+      }
+
+      .id h1 {
+        font-size: 21px;
+      }
+
+      .id p {
+        font-size: 14px;
+        text-align: left;
+      }
