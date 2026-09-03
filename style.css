@@ -1,0 +1,26 @@
+body{
+    background-image: url(back.png);
+
+}
+.card {
+   
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 7px 5px gray;
+    
+}
+
+h1 {
+    color: orange;
+    font-size: 23px;
+    margin-right: auto;
+
+}
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    flex-direction: right;
+    color: grey;
+}
