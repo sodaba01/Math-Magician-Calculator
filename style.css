@@ -60,93 +60,76 @@ h2{
         color: orange;
       }
 
-.card a {
-  margin-left: 30px;
-  color: gray;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+/* Calculator */
+
+.calculator {
+  position: absolute;
+  top: 155px;
+  right: 7%;
+  width: 465px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
 }
 
-.card a:hover {
-  color: #df914c;
-}
+/* Display */
 
-/* Main page area */
-.calculator-container {
-  border: black;
-  width: 50%;
-  display: flex;
-  justify-content: right; /* Moves calculator to right */
- 
-  margin-top: 70px;
-}
-
-
-/* Calculator display */
 #display {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 24px;
+    display: block;
+
+  width: 91.3%;
+  height: 90px;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  background: #898b96;
+  outline: none;
+  color: white;
+  font-size: 30px;
   text-align: right;
-  background-color: gray;
+  padding: 10px 20px;
 }
 
-/* Button grid */
+/* Buttons */
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: solid black;
-  
+  width: 100%;
 }
 
-/* All calculator buttons */
 .buttons button {
-  height: 50px;
-  width: 100px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
+  height: 58px;
+  border: 1px solid #bcbcbc;
+  background: #ddd;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Orange buttons */
+
+.buttons .orange {
+  background: #ff9138;
   color: #222;
-  font-size: 20px;
- 
-  
 }
 
-.buttons button:hover {
-  background-color: #dddddd;
+/* Zero button */
+
+.buttons .zero {
+  grid-column: span 2;
 }
 
-/* Operator buttons */
-.buttons button:nth-child(2),
-.buttons button:nth-child(3),
-.buttons button:nth-child(4),
-.buttons button:nth-child(8) {
-  background-color: #df914c;
-  color: white;
-}
-
-/* Equal button */
-.buttons button:last-child {
-  background-color: #df914c;
-  color: white;
-}
+.para {
+    margin: auto;
+    margin-top: 100px;
+    padding: 28px ;
+    box-shadow: 4px 7px 5px 2px  gray;
+    border-radius: 10px;
+     
+    height: 100px;
+    width: 1000px;
+      }
 
 
-
-/* Phone screen */
-@media (max-width: 700px) {
-  .card {
-    padding: 15px 20px;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
- 
-
-  
-
-  
+      .para p {
+        font-size: 14px;
+        text-align: center;
+      }
