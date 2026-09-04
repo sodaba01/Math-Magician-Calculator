@@ -25,11 +25,12 @@ a {
     color: grey;
 }
 
+a:hover {
+  color: orange; 
+}
+
 h2{
-    text-align-top: left;
-    border-radius:  box-shadow: 4px 7px 5px gray; 
-    
-  
+    text-align: left;
 }
 
 
@@ -52,3 +53,100 @@ h2{
         font-size: 14px;
         text-align: left;
       }
+
+
+      .text{
+        padding: 25px;
+        color: orange;
+      }
+
+.card a {
+  margin-left: 30px;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #df914c;
+}
+
+/* Main page area */
+.calculator-container {
+  border: black;
+  width: 50%;
+  display: flex;
+  justify-content: right; /* Moves calculator to right */
+ 
+  margin-top: 70px;
+}
+
+
+/* Calculator display */
+#display {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 24px;
+  text-align: right;
+  background-color: gray;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: solid black;
+  
+}
+
+/* All calculator buttons */
+.buttons button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #222;
+  font-size: 20px;
+ 
+  
+}
+
+.buttons button:hover {
+  background-color: #dddddd;
+}
+
+/* Operator buttons */
+.buttons button:nth-child(2),
+.buttons button:nth-child(3),
+.buttons button:nth-child(4),
+.buttons button:nth-child(8) {
+  background-color: #df914c;
+  color: white;
+}
+
+/* Equal button */
+.buttons button:last-child {
+  background-color: #df914c;
+  color: white;
+}
+
+
+
+/* Phone screen */
+@media (max-width: 700px) {
+  .card {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+ 
+
+  
+
+  
